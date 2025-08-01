@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #043b49, #022c3a);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  padding: 2rem;
+  backdrop-filter: blur(12px);
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input {
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #00eaff;
+  box-shadow: 0 0 0 2px rgba(0, 234, 255, 0.3);
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #00bfff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #00eaff;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00eaff;
+}
+
+.resultText,
+.remaining {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.resultText {
+  font-weight: bold;
+}
+
+.large-text {
+  font-size: 1.5rem;
+  color: #f1c40f;
+  text-align: center;
+}
